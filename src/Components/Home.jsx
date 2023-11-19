@@ -1,26 +1,22 @@
 import React from "react";
+import Card from "./Card";
+import ActivityCircle from "./ActivityCircle";
+import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   return (
     <>
-      <div className="bg-blue-800 card-parent">
-        <div className="bg-blue-500 rounded-xl shadow-md opacity-80 card p-16">
-          <h1 className="text-5xl font-extrabold">MISSION</h1>
-          <p>
-            To impact the students with strong fundamental concepts, analytical
-            capability, problem-solving skills, thereby enhancing the
-            employability skills required for the industries.
-          </p>
-      </div>
-        </div>
-      <div className="bg-green-800 card-parent">
-        <div className="bg-blue-500 rounded-xl shadow-md opacity-80 card">
-          <h1>MISSION</h1>
-          <p>
-            To impact the students with strong fundamental concepts, analytical
-            capability, problem-solving skills, thereby enhancing the
-            employability skills required for the industries.
-          </p>
+      <div className="bg-blue-800 card-parent py-10">
+        <Card title={"MISSION"} />
+        <div className="sm:grid sm:grid-cols-4 space-y-5 sm:space-y-0 bg-blue-500 rounded-xl shadow-md opacity-80 card p-6 sm:p-14 m-auto">
+          <ActivityCircle icons={faGamepad} />
+          <div></div>
+          <ActivityCircle icons={faGamepad} />
+          <div></div>
+          <div></div>
+          <ActivityCircle icons={faGamepad} />
+          <div></div>
+          <ActivityCircle icons={faGamepad} />
         </div>
       </div>
     </>
