@@ -26,18 +26,18 @@
   font-weight: 200;
 }
 
-.circle div{
+/* .circle div{
     background-color: beige;
     opacity: 0%;
     border-radius: 50%;
     margin-top: -60px;
     max-width: 8rem;
     min-height: 8rem;
-}
+} */
 
-.circle div:hover{
+/* .circle div:hover{
     opacity: 100%;
     width:120%;
     height: 120%;
-}
+} */
 
