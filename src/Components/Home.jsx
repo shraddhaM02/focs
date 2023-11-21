@@ -3,6 +3,7 @@ import Card from "./Card";
 import ActivityCircle from "./ActivityCircle";
 import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 import RepresentativeCard from "./RepresentativeCard";
+import Suggestion from "./Suggestion";
 
 function Home() {
   return (
@@ -19,12 +20,15 @@ function Home() {
           <div></div>
           <ActivityCircle icons={faGamepad} />
         </div>
-        <div className="my-6 sm:my-4 p-6 bg-blue-500 rounded-xl shadow-md opacity-80 m-auto repcard sm:grid sm:grid-cols-4 grid grid-cols-2">
+        <div className="my-6 sm:my-4 p-6 bg-blue-500 rounded-xl shadow-md opacity-80 m-auto card sm:grid sm:grid-cols-4 grid grid-cols-2">
             <RepresentativeCard name={"Nagaraj G N"} desg={"Forum Representative"} />
             <RepresentativeCard name={"Deepu"} desg={"Forum Representative"}/>
             <RepresentativeCard name={"Athiya"} desg={"Forum Representative"}/>
             <RepresentativeCard name={"Deeksha H M"} desg={"Ex-Forum Representative"}/>
             <RepresentativeCard name={"Supreet"} desg={"Ex-Forum Representative"}/>
+        </div>
+        <div className="my-6 sm:my-4 p-6 sm:p-14 bg-blue-500 rounded-xl shadow-md opacity-80 m-auto card">
+          <Suggestion/>
         </div>
       </div>
     </>

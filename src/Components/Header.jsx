@@ -9,7 +9,7 @@ function Header() {
   return (
     <>
       <nav className="w-full relative flex py-6 justify-between items-center text-slate-100 bg-blue-600 h-screen">
-        <div className="sm:hidden w-full ">
+        <div className="sm:hidden w-full">
           <Disclosure>
             {({ open }) => (
               <>

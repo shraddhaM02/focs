@@ -7,12 +7,14 @@ import Layout from './Layout.jsx'
 import Home from './Components/Home.jsx';
 import Gallery from './Components/Gallery.jsx';
 import { RouterProvider } from 'react-router-dom'
+import Contact from './Components/Contact.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
       <Route path='' element={<Home/>}/>
       <Route path='gallery' element={<Gallery/>}/>
+      <Route path='contact' element={<Contact/>} />
     </Route>
   )
 )
